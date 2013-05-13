@@ -1,0 +1,8 @@
+each item in items
+  div.plugin-container.ipcam
+    p.description
+        span.muted #{item.interval}: 
+        strong #{item.description} 
+        small.muted (PIN #{item.snapshoturl}) 
+        div.streamer-img
+        img.streamer(src="/img/white.jpg", data-id="#{item._id}.jpg")        
